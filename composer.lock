@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d6c73ea5dadcd971050eeb806511e47d",
+    "content-hash": "146506b34df8cfc0464bf387d6f4dc1c",
     "packages": [
         {
             "name": "brick/math",
@@ -5721,6 +5721,32 @@
             "time": "2024-11-21T01:49:47+00:00"
         },
         {
+            "name": "warehouse/inventory",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/Warehouse/Inventory",
+                "reference": "523be051f2f754d259768873d2f6b9549d975e62"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Warehouse\\Inventory\\WarehouseServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Warehouse\\Inventory\\": "src/"
+                }
+            },
+            "description": "Warehouse Inventory CRUD package",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "webmozart/assert",
             "version": "1.11.0",
             "source": {
@@ -8141,7 +8167,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "warehouse/inventory": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

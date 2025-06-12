@@ -1,0 +1,16 @@
+{
+  "name": "warehouse/inventory",
+  "description": "Warehouse Inventory CRUD package",
+  "autoload": {
+    "psr-4": {
+      "Warehouse\\Inventory\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Warehouse\\Inventory\\WarehouseServiceProvider"
+      ]
+    }
+  }
+}
